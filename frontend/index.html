@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobConnect - Find Your Dream Job</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     
+    <!-- Navbar -->
     <header>
         <div class="logo">JobConnect</div>
         <nav>
@@ -15,22 +19,31 @@
             <a href="#">Jobs</a>
             <a href="#">Companies</a>
             <a href="#">Contact</a>
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="auth/register.html" class="signup-btn">Sign Up</a>
+
+            <!-- Profile Icon with Dropdown -->
+                <div class="profile-dropdown">
+                    <i class="fas fa-user-circle profile-icon"></i>
+                    <div class="dropdown-menu">
+                        <a href="#">Login</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+                
+            </div>
         </nav>
     </header>
 
-    
+    <!-- Search Section -->
     <section class="search-section">
         <h1>Find Your Dream Job</h1>
-        <form>
-            <input type="text" placeholder="Job title, company, or keyword">
-            <input type="text" placeholder="Location">
+        <form class="search-form">
+            <input type="text" placeholder="🔍 Job title, company, or keyword">
+            <input type="text" placeholder="📍 Location">
             <button type="submit">Search</button>
         </form>
     </section>
 
-
+    <!-- Job Categories -->
     <section class="job-categories">
         <h2>Popular Job Categories</h2>
         <div class="category-container">
@@ -42,7 +55,7 @@
         </div>
     </section>
 
-
+    <!-- Latest Jobs -->
     <section class="latest-jobs">
         <h2>Latest & Top Job Openings</h2>
         <div class="job-list">
@@ -64,9 +77,10 @@
         </div>
     </section>
 
-    
+    <!-- Footer -->
     <footer>
         <p>© 2025 JobConnect. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
